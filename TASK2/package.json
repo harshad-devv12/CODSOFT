@@ -1,0 +1,28 @@
+{
+  "name": "project-management-app",
+  "version": "1.0.0",
+  "description": "Full-stack project management application",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "test": "echo \"No tests specified yet\""
+  },
+  "keywords": [
+    "project-management",
+    "react",
+    "nodejs",
+    "postgresql",
+    "supabase"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
